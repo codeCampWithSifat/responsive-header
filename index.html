@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="hero">
+        <div class="nav_var">
+            <div class="nav_logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav_links" id="nav-links">
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Recipe</li></a>
+                    <a href="#"><li>Contact </li></a>
+                </ul> 
+                  <button class="btn" type="button">Sign Up</button>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="banner_title">
+            <h1>Healthy <span>Food Is Need <br> For</span> Our Health .</h1>
+            <button class="btn" type="button">Try Now</button>
+
+        </div>
+        <div class="vertical_var">
+            <div class="search_icon">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="social_icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-p"></i>
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="contents">
+                <small>This Journey Never End Insallah</small>
+                <p><a href="">Pre</a> <a href="">Next</a></p>
+            </div>
+            <div class="notification_img">
+                <img src="images/sifat23.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right = "0"
+        }
+        function closeMenu(){
+            show.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
